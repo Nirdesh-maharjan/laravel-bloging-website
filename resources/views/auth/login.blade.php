@@ -100,7 +100,7 @@
             </div>
         @endif
 
-        <form method="POST" action="{{ route('login.store') }}">
+        <form method="POST" action="{{ route('login') }}">
             @csrf
 
             <div class="field">
