@@ -18,8 +18,8 @@ use App\Http\Controllers\NotificationController;
 | Auth Routes
 |--------------------------------------------------------------------------
 */
-Route::get('/login', [AuthController::class, 'showLogin'])->name('login.show');
-Route::post('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('login.store');
 
 
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
